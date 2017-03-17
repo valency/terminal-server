@@ -1,0 +1,62 @@
+<html>
+<head>
+    <style>
+        @font-face {
+            font-family: "Droid Sans Mono";
+            font-style: normal;
+            font-weight: 400;
+            src: local("Droid Sans Mono"), local("DroidSansMono"), url(font.woff2) format("woff2");
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+            background: white;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            background: radial-gradient(circle, #fff 0%, #aaa 100%) no-repeat;
+        }
+
+        body {
+            font-family: "Droid Sans Mono", monospace;
+            text-align: center;
+            display: table;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            background: #DA3D41;
+        }
+
+        a:hover {
+            background: black;
+        }
+
+        #wrap {
+            box-sizing: border-box;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #e404 {
+            color: #DA3D41;
+            font-size: 10em;
+            margin-top: -100px;
+            display: block;
+        }
+    </style>
+    <title>404: Page Not Found</title>
+</head>
+<body>
+<div id="wrap">
+    <span id="e404">404</span>
+    <p>Page Not Found / <a href="/">Home</a></p>
+</div>
+</body>
+</html>

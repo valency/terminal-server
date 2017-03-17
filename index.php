@@ -63,24 +63,21 @@
         }
 
         a {
+            color: white;
             text-decoration: none;
-            color: black;
+            background: #DA3D41;
+            padding: 0 2px;
+        }
+
+        a:hover {
+            background: black;
         }
 
         .footer {
-            color: white;
             position: fixed;
             bottom: 50px;
             right: 50px;
             font-size: 12px;
-        }
-
-        .footer a {
-            color: white;
-        }
-
-        a:hover {
-            color: red;
         }
     </style>
     <title>The Avatar System</title>
@@ -113,8 +110,9 @@
                 for (var i = 0; i < apps.length; i++) {
                     var a = document.createElement("a");
                     a.setAttribute("href", apps[i]);
-                    a.appendChild(document.createTextNode(apps[i] + " "));
+                    a.appendChild(document.createTextNode(apps[i]));
                     cmd.appendChild(a);
+                    cmd.appendChild(document.createTextNode(" "))
                 }
             } else {
                 location.href = s;
