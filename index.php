@@ -10,17 +10,6 @@
             unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
         }
 
-        span {
-            font-family: "Droid Sans Mono", monospace;
-            font-size: 16px;
-        }
-
-        #wrap:after {
-            content: "_";
-            opacity: 0;
-            animation: cursor 1s infinite;
-        }
-
         @keyframes cursor {
             0% {
                 opacity: 0;
@@ -54,12 +43,23 @@
             height: 100%;
             overflow-x: hidden;
             overflow-y: hidden;
+            font-family: "Droid Sans Mono", monospace;
         }
 
         #wrap {
             box-sizing: border-box;
             display: table-cell;
             vertical-align: middle;
+        }
+
+        #wrap span {
+            font-size: 16px;
+        }
+
+        #wrap:after {
+            content: "_";
+            opacity: 0;
+            animation: cursor 1s infinite;
         }
 
         a {
@@ -87,7 +87,10 @@
     <span id="cmd">avatarsys.org:~$ </span>
     <span id="cursor"></span>
 </div>
-<span class="footer">(C) 2013 - 2017 Themed by <a href="http://www.cse.ust.hk/~valency/" target="_blank">Valency</a></span>
+<div class="footer">
+    (C) 2013 - 2017 Themed by <a href="http://www.cse.ust.hk/~valency/" target="_blank">Valency</a> |
+    <a href="http://www.miitbeian.gov.cn" target="_blank">粤 ICP 备 17030785 号</a>
+</div>
 </body>
 <script>
     var apps = [<?php
